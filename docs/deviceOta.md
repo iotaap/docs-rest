@@ -78,7 +78,7 @@ process on the device.
     Notice that the OTA Update will be triggered on the device if `version` parameter is different from 
     the previous firmware!
 
-**URL** : `https://api.iotaap.io/v1/device`
+**URL** : `https://api.iotaap.io/v1/ota/device`
 
 **Method** : `POST`
 

@@ -89,7 +89,7 @@ process on the devices that are part of the group.
     devices will be upgraded. This is a great feature if you want to test your new firware only with a few devices,
     and then deploy it to the full fleet.
 
-**URL** : `https://api.iotaap.io/v1/group`
+**URL** : `https://api.iotaap.io/v1/ota/group`
 
 **Method** : `POST`
 
