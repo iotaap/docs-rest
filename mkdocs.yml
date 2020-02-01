@@ -13,6 +13,7 @@ nav:
   - Group OTA: groupOta.md
   - MQTT: mqtt.md
   - MQTT REST Bridge: mqttRest.md
+  - Billing: billing.md
         
 # Copyright
 copyright: 'Copyright IoTaaP'
