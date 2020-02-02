@@ -184,6 +184,18 @@ in the current billing plan
 
 ### Error Responses
 
+**Condition** : If number of MQTT instances reached the maximum number of allowed instances in currently active billing model
+
+**Code** : `403 FORBIDDEN`
+
+**Content** :
+
+```json
+{
+    "message": "Maximum number of MQTT instances reached. Please upgrade your account."
+}
+```
+
 **Condition** : If there was an issue with MQTT instance creation
 
 **Code** : `500 INTERNAL SERVER ERROR`

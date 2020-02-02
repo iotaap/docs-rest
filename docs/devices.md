@@ -188,6 +188,18 @@ in the current billing plan
 
 ### Error Responses
 
+**Condition** : If number of devices reached the maximum number of allowed devices in currently active billing model
+
+**Code** : `403 FORBIDDEN`
+
+**Content** :
+
+```json
+{
+    "message": "Maximum number of devices reached. Please upgrade your account."
+}
+```
+
 **Condition** : If user information is not available at the moment
 
 **Code** : `500 INTERNAL SERVER ERROR`

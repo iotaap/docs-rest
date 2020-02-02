@@ -152,6 +152,18 @@ process on the devices that are part of the group.
 }
 ```
 
+**Condition** : If user billing model type doesn't allow group OTA updates
+
+**Code** : `403 FORBIDDEN`
+
+**Content** :
+
+```json
+{
+    "message": "Group OTA update is not available in free model. Please upgrade your account."
+}
+```
+
 **Condition** : If group doesn't exist or current user is not the owner
 
 **Code** : `404 NOT FOUND`

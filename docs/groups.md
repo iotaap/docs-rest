@@ -294,6 +294,18 @@ in the current billing plan
 
 ### Error Responses
 
+**Condition** : If user billing model type doesn't allow group creation
+
+**Code** : `403 FORBIDDEN`
+
+**Content** :
+
+```json
+{
+    "message": "Groups are not available in free model. Please upgrade your account."
+}
+```
+
 **Condition** : If user information is not available at the moment
 
 **Code** : `500 INTERNAL SERVER ERROR`
