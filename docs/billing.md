@@ -116,48 +116,47 @@ It will return all available billing models
 {
     "billingModels": [
         {
-            "_id": "5e35e7ca60c07c12660fe63f",
+            "_id": "600572133c857f002c0d0aa7",
             "type": 1,
-            "name": "Creator",
-            "description": "Our free plan gives you the possibility to start creating without worrying about payments.",
+            "name": "Free",
+            "support": "Community",
+            "access": "MQTTS, WS",
+            "mps": "50",
+            "ota": "Unlimited",
             "price": "0.00",
             "devices": 2,
-            "mqtt": 1,
-            "__v": 0
-        },
-        {
-            "_id": "5e35e7ca60c07c12660fe640",
-            "type": 2,
-            "name": "Startup",
-            "description": "You are building your IoT stuff. And you have a plan to create the next big thing. Go forward!",
-            "price": "24.00",
-            "devices": 20,
-            "mqtt": 2,
-            "__v": 0
-        },
-        {
-            "_id": "5e35e7ca60c07c12660fe641",
-            "type": 3,
-            "name": "Growth",
-            "description": "Your idea is validated or you need a few more instances for your project. This model is for you!",
-            "price": "120.00",
-            "devices": 100,
             "mqtt": 4,
             "__v": 0
         },
         {
-            "_id": "5e35e7ca60c07c12660fe642",
-            "type": 4,
-            "name": "Scale",
-            "description": "You are a company or a fast growing startup. You need more power and more devices. Push it up!",
-            "price": "600.00",
-            "devices": 500,
-            "mqtt": 8,
+            "_id": "600572133c857f002c0d0aa8",
+            "type": 2,
+            "name": "Solo",
+            "support": "Community",
+            "access": "MQTTS, WS",
+            "mps": "100",
+            "ota": "Unlimited",
+            "price": "6.00",
+            "devices": 10,
+            "mqtt": 20,
             "__v": 0
-        }
+        },
+        {
+            "_id": "600572133c857f002c0d0aa9",
+            "type": 3,
+            "name": "Startup",
+            "support": "Community",
+            "access": "MQTTS, WS",
+            "mps": "100",
+            "ota": "Unlimited",
+            "price": "30.00",
+            "devices": 50,
+            "mqtt": 100,
+            "__v": 0
+        },
     ],
-    "recordsTotal": 4,
-    "recordsFiltered": 4,
+    "recordsTotal": 3,
+    "recordsFiltered": 3,
     "draw": "warp"
 }
 ```
@@ -174,10 +173,13 @@ It will return all available billing models
 - _id `(ObjectID)`: unique billing model ID
 - type `(number)`: billing model type used for easier manipulation (used instead of _id)
 - name `(string)`: billing model name
-- description `(string)`: billing model short description
+- support `(string)`: billing model support type
+- access `(string)`: billing model access types
+- mps `(string)`: billing model messages per second
+- ota `(string)`: billing model OTA update limit
 - price `(string)`: billing model price as string with 2 decimals
 - devices `(number)`: maximum number of devices allowed in billing model
-- mqtt `(number)`: maximum number of MQTT instances allowed in billing model
+- mqtt `(number)`: maximum number of MQTT clients allowed in billing model
 - __v `(number)`: should be ignored
 
 ## Generating invoice

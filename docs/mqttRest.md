@@ -20,6 +20,7 @@ Send data to the specific topic using options and credentials
 - retain `(string)`: true/false
 - qos `(string)`: QoS (0,1,2) 
 - message `(string)/(number)/(object)`: Payload
+- server `(string)`: MQTT Instance Server
 
 !!! info "Retained message"
     If `retain` parameter is not provided, default value of `false` will be used.
@@ -37,7 +38,8 @@ Send data to the specific topic using options and credentials
 	"topic" : "/motor-speed",
 	"retain": true,
 	"qos": 2,
-	"message" : 23
+	"message" : 23,
+    "server" : "mqtt2.iotaap.io"
 }
 ```
 
@@ -48,7 +50,8 @@ Send data to the specific topic using options and credentials
 	"username" : "oLP6MA9r",
 	"password" : "abdI2FxeHStx",
 	"topic" : "/motor-speed",
-	"message" : 23
+	"message" : 23,
+    "server" : "mqtt2.iotaap.io"
 }
 ```
 
@@ -68,7 +71,8 @@ Send data to the specific topic using options and credentials
             "I": 56,
             "D": 10
         }
-    }
+    },
+    "server" : "mqtt2.iotaap.io"
 }
 ```
 
